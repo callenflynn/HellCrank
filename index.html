@@ -16,7 +16,7 @@
       .container {
         background-color: rgba(0, 0, 0, 0.6); 
         max-width: 400px;
-        margin: 100px auto;
+        margin: 100px auto 20px; /* reduced bottom margin for spacing */
         padding: 30px;
         border-radius: 12px;
         text-align: center;
@@ -37,6 +37,22 @@
       a:hover {
         text-decoration: underline;
       }
+
+      /* New update box styling */
+      .update-box {
+        background-color: rgba(0, 0, 0, 0.6);
+        max-width: 400px;
+        margin: 0 auto 100px; /* some spacing below the update box */
+        padding: 20px 30px;
+        border-radius: 12px;
+        text-align: left;
+        font-size: 16px;
+      }
+
+      .update-box h2 {
+        margin-top: 0;
+        color: #6cf;
+      }
     </style>
   </head>
   <body>
@@ -47,6 +63,12 @@
       <p>
         <a href="https://github.com/callenflynn/HellCrank/releases" target="_blank" rel="noopener noreferrer">Releases</a>
       </p>
+    </div>
+
+    <!-- Update box below the main box -->
+    <div class="update-box">
+      <h2>Update Title Here</h2>
+      <p>Update body content goes here. You can fill this in with the latest news or progress updates.</p>
     </div>
   </body>
 </html>
