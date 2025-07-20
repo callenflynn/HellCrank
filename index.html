@@ -3,13 +3,52 @@
   <head>
     <title>HellCrank</title>
     <link rel="icon" href="hellcrank.png" type="image/png">
+    <style>
+      /* Full-page background */
+      body {
+        margin: 0;
+        padding: 0;
+        background: url('background1.jpeg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        color: white;
+      }
+
+      /* Centered semi-transparent box */
+      .container {
+        background-color: rgba(0, 0, 0, 0.6); /* black with 60% opacity */
+        max-width: 400px;
+        margin: 100px auto;
+        padding: 30px;
+        border-radius: 12px;
+        text-align: center;
+      }
+
+      .container img {
+        display: block;
+        margin: 0 auto 20px;
+        max-width: 150px;
+        height: auto;
+      }
+
+      a {
+        color: #6cf; /* light blue */
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <img src="hellcrank.png" alt="HellCrank Logo" style="display:block; margin: 0 auto;">
-    <p style="text-align:center;">Game coming soon...</p>
-    <p style="text-align:center;">Check back later for progress updates and sneak peeks!</p>
-    <p style="text-align:center;">
-      <a href="https://github.com/callenflynn/HellCrank/releases" target="_blank">Releases</a>
-    </p>
+    <div class="container">
+      <img src="hellcrank.png" alt="HellCrank Logo">
+      <p>Game coming soon...</p>
+      <p>Check back later for progress updates and sneak peeks!</p>
+      <p>
+        <a href="https://github.com/callenflynn/HellCrank/releases" target="_blank" rel="noopener noreferrer">Releases</a>
+      </p>
+    </div>
   </body>
 </html>
